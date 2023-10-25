@@ -6,6 +6,7 @@
 }
 
 body{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +18,8 @@ button{
     height:55px;
     border-radius: 10px;
     background:#4093F7;
-    transition: 0.2s;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 span{
@@ -32,6 +34,7 @@ button :nth-child(1){
 
 .clicked{
     background: #BBBBBB;
+    transform: matrix(0.95,0,0,0.95,0,0);
 }
 
 .clicked :nth-child(1){
@@ -40,4 +43,10 @@ button :nth-child(1){
 
 .clicked :nth-child(2){
     display:block;
+}
+
+.unclicked{
+    background: #BBBBBB;
+    transform-origin: center bottom 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
 }
